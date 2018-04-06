@@ -8,8 +8,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class UserEditProfilActivity extends AppCompatActivity {
-    private Button save;
+    private Button save, editfoto;
     private TextView nama,alamat,notelp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,13 @@ public class UserEditProfilActivity extends AppCompatActivity {
                 Intent intent = new Intent(UserEditProfilActivity.this, UserProfilActivity.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+
+        editfoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //kalau edit foto diklik
             }
         });
     }

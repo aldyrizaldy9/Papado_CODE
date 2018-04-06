@@ -32,7 +32,11 @@
         android:orientation="vertical"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp">
-
+        <Button
+            android:id="@+id/penyedia_edit_foto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="edit foto" />
         <EditText
             android:id="@+id/penyedia_edit_venue"
             android:layout_width="match_parent"
