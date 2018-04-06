@@ -29,10 +29,9 @@
                 <ImageView
                     android:id="@+id/penyedia_profile_foto"
                     android:layout_width="match_parent"
-                    android:layout_height="192dp"
+                    android:layout_height="240dp"
                     android:background="@color/colorPrimaryDark"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/ic_account_circle_black_48dp" />
+                    android:src="@drawable/dummy_photo_profile" />
 
                 <TextView
                     android:id="@+id/penyedia_profile_nama"

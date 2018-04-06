@@ -19,6 +19,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
             android:layout_height="match_parent">
 
             <LinearLayout
@@ -33,17 +34,19 @@
                     android:id="@+id/penyedia_logout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
                     android:gravity="center_vertical">
 
                     <ImageView
                         android:padding="2dp"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/logout" />
 
                     <TextView
                         android:layout_marginLeft="8dp"
                         android:textSize="20sp"
+                        android:textColor="@color/putih"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Logout" />
@@ -59,9 +62,10 @@
                         android:padding="2dp"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/hapus_akun"/>
 
                     <TextView
+                        android:textColor="@color/putih"
                         android:layout_marginLeft="8dp"
                         android:textSize="20sp"
                         android:layout_width="wrap_content"
