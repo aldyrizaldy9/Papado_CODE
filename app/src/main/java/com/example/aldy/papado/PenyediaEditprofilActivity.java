@@ -26,6 +26,7 @@ public class PenyediaEditprofilActivity extends AppCompatActivity {
             }
         });
 
+        editfoto = findViewById(R.id.penyedia_edit_foto);
         editfoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

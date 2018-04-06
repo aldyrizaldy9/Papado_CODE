@@ -70,7 +70,7 @@ public class PenyediaProfilActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                 }
-                return false;
+                return true;
             }
         });
     }

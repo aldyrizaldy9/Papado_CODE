@@ -29,6 +29,7 @@ public class UserEditProfilActivity extends AppCompatActivity {
             }
         });
 
+        editfoto = findViewById(R.id.user_edit_foto);
         editfoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

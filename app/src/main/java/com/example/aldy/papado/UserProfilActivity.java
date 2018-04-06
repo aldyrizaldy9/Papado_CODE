@@ -66,7 +66,7 @@ public class UserProfilActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                 }
-                return false;
+                return true;
             }
         });
     }
