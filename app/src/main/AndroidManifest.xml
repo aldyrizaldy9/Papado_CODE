@@ -31,40 +31,56 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".PenyediaProfilActivity"
-            android:label="Profil saya" />
+            android:label="Profil saya"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".PenyediaPemesananActivity"
-            android:label="Pemesanan" />
+            android:label="Pemesanan"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".PenyediaPengaturanActivity"
-            android:label="Pengaturan" />
-        <activity android:name=".PenyediaTambahlapActivity" />
+            android:label="Pengaturan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PenyediaTambahlapActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".PenyediaJadwalActivity"
-            android:label="Jadwal" />
-        <activity android:name=".PenyediaEditprofilActivity" />
-        <activity android:name=".PenyediaJadwalTambahActivity" />
+            android:label="Jadwal"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PenyediaEditprofilActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PenyediaJadwalTambahActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".UserProfilActivity"
-            android:label="User Profil" />
+            android:label="User Profil"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".UserNotifActivity"
-            android:label="User Pemesanan" />
+            android:label="User Pemesanan"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".UserRiwayatActivity"
-            android:label="User Riwayat" />
+            android:label="User Riwayat"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".UserBadmintonActivity"
-            android:label="User Badminton" />
+            android:label="User Badminton"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".UserFutsalActivity"
-            android:label="User Futsal" />
+            android:label="User Futsal"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".UserPengaturanActivity"
-            android:label="User Pengaturan" />
-        <activity android:name=".UserPemesananJadwalActivity" />
-        <activity android:name=".UserPemesananLapanganActivity" />
-        <activity android:name=".UserEditProfilActivity"></activity>
+            android:label="User Pengaturan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".UserPemesananJadwalActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".UserPemesananLapanganActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".UserEditProfilActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

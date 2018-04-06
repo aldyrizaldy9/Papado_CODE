@@ -27,10 +27,10 @@ public class LoginActivity extends AppCompatActivity {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 switch (motionEvent.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        lupapassword.setTextColor(Color.parseColor("#F3D06A"));
+                        lupapassword.setTextColor(getResources().getColor(R.color.buttondown));
                         break;
                     case MotionEvent.ACTION_UP:
-                        lupapassword.setTextColor(getResources().getColor(R.color.colorAccent));
+                        lupapassword.setTextColor(getResources().getColor(R.color.putih));
                         break;
                 }
                 return false;
@@ -41,13 +41,12 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //kode kalau text lupa password diklik
-
             }
         });
 
         username = findViewById(R.id.login_username_text);
         pass = findViewById(R.id.login_password_text);
-        Button masuk = findViewById(R.id.login_button_masuk);
+        final Button masuk = findViewById(R.id.login_button_masuk);
         masuk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        TextView daftar = findViewById(R.id.login_button_daftar);
+        final TextView daftar = findViewById(R.id.login_button_daftar);
         daftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,6 +69,20 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
                 //kode kalau tombol daftar diklik
 
+            }
+        });
+        daftar.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                switch (motionEvent.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        daftar.setTextColor(getResources().getColor(R.color.buttondown));
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        daftar.setTextColor(getResources().getColor(R.color.putih));
+                        break;
+                }
+                return false;
             }
         });
 

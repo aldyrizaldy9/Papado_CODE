@@ -39,6 +39,6 @@ public class PenyediaEditprofilActivity extends AppCompatActivity {
         notelp = findViewById(R.id.penyedia_edit_notelp);
         jambuka = findViewById(R.id.penyedia_edit_jambuka);
         jamtutup = findViewById(R.id.penyedia_edit_jamtutup);
-        
+
     }
 }

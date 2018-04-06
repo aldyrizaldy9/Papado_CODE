@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -56,12 +57,20 @@ public class PenyediaProfilActivity extends AppCompatActivity {
                 });
 
         editprofile = findViewById(R.id.penyedia_profile_edit);
-        editprofile.setOnClickListener(new View.OnClickListener() {
+        editprofile.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent (PenyediaProfilActivity.this, PenyediaEditprofilActivity.class);
-                startActivity(intent);
-
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                switch (motionEvent.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        editprofile.setTextColor(getResources().getColor(R.color.buttondown));
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        editprofile.setTextColor(getResources().getColor(android.R.color.primary_text_light));
+                        Intent intent = new Intent (PenyediaProfilActivity.this, PenyediaEditprofilActivity.class);
+                        startActivity(intent);
+                        break;
+                }
+                return false;
             }
         });
     }

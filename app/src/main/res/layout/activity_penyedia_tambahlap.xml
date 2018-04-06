@@ -25,30 +25,36 @@
             />
     </LinearLayout>
     <EditText
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
         android:id="@+id/penyedia_lapbaru_nama"
-        android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nama Lapangan"
         android:textColorHint="@color/colorPrimary"/>
     <EditText
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
         android:id="@+id/penyedia_lapbaru_ukuran"
-        android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ukuran"
         android:textColorHint="@color/colorPrimary"/>
     <EditText
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
         android:id="@+id/penyedia_lapbaru_harga"
-        android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Harga"
         android:textColorHint="@color/colorPrimary"/>
 
     <Button
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
         android:id="@+id/penyedia_button_simpanlap"
-        android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Simpan"/>

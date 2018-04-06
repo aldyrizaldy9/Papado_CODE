@@ -17,7 +17,6 @@ public class UserEditProfilActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_edit_profil);
 
         nama = findViewById(R.id.user_edit_nama);
-        alamat = findViewById(R.id.user_edit_alamat);
         notelp = findViewById(R.id.user_edit_notelp);
 
         save = findViewById(R.id.user_save_editprofile);

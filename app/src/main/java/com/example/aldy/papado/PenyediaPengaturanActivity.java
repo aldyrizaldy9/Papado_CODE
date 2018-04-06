@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -15,7 +16,7 @@ public class PenyediaPengaturanActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
     private Toolbar mToolbar;
-    private LinearLayout logout;
+    private LinearLayout logout, delacc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,12 +55,39 @@ public class PenyediaPengaturanActivity extends AppCompatActivity {
                 });
 
         logout = findViewById(R.id.penyedia_logout);
-        logout.setOnClickListener(new View.OnClickListener() {
+        logout.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PenyediaPengaturanActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish();
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                switch (motionEvent.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        logout.setBackgroundColor(getResources().getColor(R.color.buttondown));
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        logout.setBackgroundColor(0x00000000);
+                        Intent intent = new Intent(PenyediaPengaturanActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                        finish();
+                        break;
+                }
+                return true;
+            }
+        });
+        delacc = findViewById(R.id.penyedia_delacc);
+        delacc.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                switch (motionEvent.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        delacc.setBackgroundColor(getResources().getColor(R.color.buttondown));
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        delacc.setBackgroundColor(0x00000000);
+                        Intent intent = new Intent(PenyediaPengaturanActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                        finish();
+                        break;
+                }
+                return true;
             }
         });
     }
@@ -87,7 +115,7 @@ public class PenyediaPengaturanActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.penyedia_nav_jadwal:
-                Intent jadwal= new Intent(PenyediaPengaturanActivity.this, PenyediaJadwalActivity.class);
+                Intent jadwal = new Intent(PenyediaPengaturanActivity.this, PenyediaJadwalActivity.class);
                 startActivity(jadwal);
                 finish();
                 break;
