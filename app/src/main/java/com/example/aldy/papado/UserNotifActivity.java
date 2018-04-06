@@ -40,6 +40,8 @@ public class UserNotifActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         NavigationView navigationView = findViewById(R.id.user_nav_view);
+        navigationView.getMenu().findItem(R.id.user_nav_pemesanan).setEnabled(false);
+        navigationView.getMenu().findItem(R.id.user_nav_pemesanan).setChecked(true);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -74,14 +76,6 @@ public class UserNotifActivity extends AppCompatActivity {
             case R.id.user_nav_profil:
                 Intent favorit = new Intent(UserNotifActivity.this, UserProfilActivity.class);
                 startActivity(favorit);
-                finish();
-                break;
-            case R.id.user_nav_pemesanan:
-                mDrawerLayout.closeDrawers();
-                break;
-            case R.id.user_nav_riwayat:
-                Intent riwayat = new Intent(UserNotifActivity.this, UserRiwayatActivity.class);
-                startActivity(riwayat);
                 finish();
                 break;
             case R.id.user_nav_badminton:

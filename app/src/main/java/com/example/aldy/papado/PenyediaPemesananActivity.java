@@ -40,6 +40,8 @@ public class PenyediaPemesananActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         NavigationView navigationView = findViewById(R.id.penyedia_nav_view);
+        navigationView.getMenu().findItem(R.id.penyedia_nav_pemesanan).setEnabled(false);
+        navigationView.getMenu().findItem(R.id.penyedia_nav_pemesanan).setChecked(true);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -80,14 +82,9 @@ public class PenyediaPemesananActivity extends AppCompatActivity {
 
     public void penyedia_pindahactivity(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
-            case R.id.penyedia_nav_halamansaya:
+            case R.id.penyedia_nav_profil:
                 Intent halamansaya = new Intent(PenyediaPemesananActivity.this, PenyediaProfilActivity.class);
                 startActivity(halamansaya);
-                finish();
-                break;
-            case R.id.penyedia_nav_pemesanan:
-                Intent pemesanan = new Intent(PenyediaPemesananActivity.this, PenyediaPemesananActivity.class);
-                startActivity(pemesanan);
                 finish();
                 break;
             case R.id.penyedia_nav_pengaturan:
@@ -95,7 +92,7 @@ public class PenyediaPemesananActivity extends AppCompatActivity {
                 startActivity(pengaturan);
                 finish();
                 break;
-            case R.id.penyedia_nav_jenislapangan:
+            case R.id.penyedia_nav_daftarlapangan:
                 Intent jenislapangan = new Intent(PenyediaPemesananActivity.this, PenyediaDaftarLapanganActivity.class);
                 startActivity(jenislapangan);
                 finish();

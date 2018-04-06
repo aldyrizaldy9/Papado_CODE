@@ -41,6 +41,8 @@ public class UserFutsalActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         NavigationView navigationView = findViewById(R.id.user_nav_view);
+        navigationView.getMenu().findItem(R.id.user_nav_futsal).setEnabled(false);
+        navigationView.getMenu().findItem(R.id.user_nav_futsal).setChecked(true);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -86,18 +88,10 @@ public class UserFutsalActivity extends AppCompatActivity {
                 startActivity(pemesanan);
                 finish();
                 break;
-            case R.id.user_nav_riwayat:
-                Intent riwayat = new Intent(UserFutsalActivity.this, UserRiwayatActivity.class);
-                startActivity(riwayat);
-                finish();
-                break;
             case R.id.user_nav_badminton:
                 Intent badminton = new Intent(UserFutsalActivity.this, UserBadmintonActivity.class);
                 startActivity(badminton);
                 finish();
-                break;
-            case R.id.user_nav_futsal:
-                mDrawerLayout.closeDrawers();
                 break;
             case R.id.user_nav_pengaturan:
                 Intent pengaturan= new Intent(UserFutsalActivity.this, UserPengaturanActivity.class);

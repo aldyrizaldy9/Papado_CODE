@@ -60,10 +60,6 @@
             android:label="User Pemesanan"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".UserRiwayatActivity"
-            android:label="User Riwayat"
-            android:screenOrientation="portrait"/>
-        <activity
             android:name=".UserBadmintonActivity"
             android:label="User Badminton"
             android:screenOrientation="portrait"/>

@@ -35,13 +35,16 @@ public class UserPengaturanActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         NavigationView navigationView = findViewById(R.id.user_nav_view);
+
+        navigationView.getMenu().findItem(R.id.user_nav_pengaturan).setEnabled(false);
+        navigationView.getMenu().findItem(R.id.user_nav_pengaturan).setChecked(true);
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 item.setChecked(true);
                 user_pindahactivity(item);
                 mDrawerLayout.closeDrawers();
-
                 return true;
             }
         });
@@ -95,11 +98,6 @@ public class UserPengaturanActivity extends AppCompatActivity {
                 startActivity(pemesanan);
                 finish();
                 break;
-            case R.id.user_nav_riwayat:
-                Intent riwayat = new Intent(UserPengaturanActivity.this, UserRiwayatActivity.class);
-                startActivity(riwayat);
-                finish();
-                break;
             case R.id.user_nav_badminton:
                 Intent badminton = new Intent(UserPengaturanActivity.this, UserBadmintonActivity.class);
                 startActivity(badminton);
@@ -109,9 +107,6 @@ public class UserPengaturanActivity extends AppCompatActivity {
                 Intent futsal= new Intent(UserPengaturanActivity.this, UserFutsalActivity.class);
                 startActivity(futsal);
                 finish();
-                break;
-            case R.id.user_nav_pengaturan:
-                mDrawerLayout.closeDrawers();
                 break;
         }
     }

@@ -35,6 +35,8 @@ public class UserProfilActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         NavigationView navigationView = findViewById(R.id.user_nav_view);
+        navigationView.getMenu().findItem(R.id.user_nav_profil).setEnabled(false);
+        navigationView.getMenu().findItem(R.id.user_nav_profil).setChecked(true);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -72,17 +74,9 @@ public class UserProfilActivity extends AppCompatActivity {
     }
     public void user_pindahactivity (MenuItem menuItem){
         switch (menuItem.getItemId()) {
-            case R.id.user_nav_profil:
-                mDrawerLayout.closeDrawers();
-                break;
             case R.id.user_nav_pemesanan:
                 Intent pemesanan = new Intent(UserProfilActivity.this, UserNotifActivity.class);
                 startActivity(pemesanan);
-                finish();
-                break;
-            case R.id.user_nav_riwayat:
-                Intent riwayat = new Intent(UserProfilActivity.this, UserRiwayatActivity.class);
-                startActivity(riwayat);
                 finish();
                 break;
             case R.id.user_nav_badminton:

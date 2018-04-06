@@ -93,7 +93,7 @@ public class PenyediaJadwalActivity extends AppCompatActivity {
 
     public void penyedia_pindahactivity(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
-            case R.id.penyedia_nav_halamansaya:
+            case R.id.penyedia_nav_profil:
                 Intent halamansaya = new Intent(PenyediaJadwalActivity.this, PenyediaProfilActivity.class);
                 startActivity(halamansaya);
                 finish();
@@ -108,7 +108,7 @@ public class PenyediaJadwalActivity extends AppCompatActivity {
                 startActivity(pengaturan);
                 finish();
                 break;
-            case R.id.penyedia_nav_jenislapangan:
+            case R.id.penyedia_nav_daftarlapangan:
                 Intent jenislapangan = new Intent(PenyediaJadwalActivity.this, PenyediaDaftarLapanganActivity.class);
                 startActivity(jenislapangan);
                 finish();

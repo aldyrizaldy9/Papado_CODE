@@ -43,6 +43,8 @@ public class PenyediaDaftarLapanganActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         NavigationView navigationView = findViewById(R.id.penyedia_nav_view);
+        navigationView.getMenu().findItem(R.id.penyedia_nav_daftarlapangan).setEnabled(false);
+        navigationView.getMenu().findItem(R.id.penyedia_nav_daftarlapangan).setChecked(true);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -92,7 +94,7 @@ public class PenyediaDaftarLapanganActivity extends AppCompatActivity {
 
     public void penyedia_pindahactivity (MenuItem menuItem){
         switch (menuItem.getItemId()) {
-            case R.id.penyedia_nav_halamansaya:
+            case R.id.penyedia_nav_profil:
                 Intent halamansaya = new Intent(PenyediaDaftarLapanganActivity.this, PenyediaProfilActivity.class);
                 startActivity(halamansaya);
                 finish();
@@ -105,11 +107,6 @@ public class PenyediaDaftarLapanganActivity extends AppCompatActivity {
             case R.id.penyedia_nav_pengaturan:
                 Intent pengaturan = new Intent(PenyediaDaftarLapanganActivity.this, PenyediaPengaturanActivity.class);
                 startActivity(pengaturan);
-                finish();
-                break;
-            case R.id.penyedia_nav_jenislapangan:
-                Intent jenislapangan = new Intent(PenyediaDaftarLapanganActivity.this, PenyediaDaftarLapanganActivity.class);
-                startActivity(jenislapangan);
                 finish();
                 break;
             case R.id.penyedia_nav_jadwal:
