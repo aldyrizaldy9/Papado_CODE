@@ -16,6 +16,9 @@ public class PenyediaProfil {
         this.notelp = notelp;
     }
 
+    public PenyediaProfil() {
+    }
+
     public String getAlamat() {
         return alamat;
     }

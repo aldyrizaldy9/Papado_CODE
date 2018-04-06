@@ -1,15 +1,38 @@
 package com.example.aldy.papado;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class PenyediaEditprofilActivity extends AppCompatActivity {
+import com.vansuita.pickimage.bean.PickResult;
+import com.vansuita.pickimage.bundle.PickSetup;
+import com.vansuita.pickimage.dialog.PickImageDialog;
+import com.vansuita.pickimage.listeners.IPickResult;
+
+public class PenyediaEditprofilActivity extends AppCompatActivity implements IPickResult {
     private Button save, editfoto;
     private TextView namavenue, namapenyedia, alamat, notelp, jambuka, jamtutup;
+    Bitmap mGallery;
+    Uri mUri, dlUri;
+    String mPath;
+
+    @Override
+    public void onPickResult(PickResult r) {
+        if (r.getError() == null) {
+            mGallery = r.getBitmap();
+            mUri = r.getUri();
+            mPath = r.getPath();
+            Toast.makeText(this, r.getUri() + "  " + r.getPath(), Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, r.getError().getMessage(), Toast.LENGTH_LONG).show();
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +54,9 @@ public class PenyediaEditprofilActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //kalau simpan foto
+                PickImageDialog.build(new PickSetup()).show(PenyediaEditprofilActivity.this);
+
+
             }
         });
 

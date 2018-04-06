@@ -13,6 +13,9 @@ public class UserProfil {
         this.notelpUser = notelpUser;
     }
 
+    public UserProfil() {
+    }
+
     public String getNamaUser() {
         return namaUser;
     }
