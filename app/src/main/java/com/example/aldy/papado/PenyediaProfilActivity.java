@@ -37,8 +37,8 @@ public class PenyediaProfilActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         NavigationView navigationView = findViewById(R.id.penyedia_nav_view);
-        navigationView.getMenu().findItem(R.id.penyedia_nav_profile).setEnabled(false);
-        navigationView.getMenu().findItem(R.id.penyedia_nav_profile).setChecked(true);
+        navigationView.getMenu().findItem(R.id.penyedia_nav_profil).setEnabled(false);
+        navigationView.getMenu().findItem(R.id.penyedia_nav_profil).setChecked(true);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override

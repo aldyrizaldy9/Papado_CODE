@@ -42,6 +42,8 @@ public class PenyediaJadwalActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         NavigationView navigationView = findViewById(R.id.penyedia_nav_view);
+        navigationView.getMenu().findItem(R.id.penyedia_nav_jadwal).setChecked(true);
+        navigationView.getMenu().findItem(R.id.penyedia_nav_jadwal).setEnabled(false);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -111,11 +113,6 @@ public class PenyediaJadwalActivity extends AppCompatActivity {
             case R.id.penyedia_nav_daftarlapangan:
                 Intent jenislapangan = new Intent(PenyediaJadwalActivity.this, PenyediaDaftarLapanganActivity.class);
                 startActivity(jenislapangan);
-                finish();
-                break;
-            case R.id.penyedia_nav_jadwal:
-                Intent jadwal= new Intent(PenyediaJadwalActivity.this, PenyediaJadwalActivity.class);
-                startActivity(jadwal);
                 finish();
                 break;
         }

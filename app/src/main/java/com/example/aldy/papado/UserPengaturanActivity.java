@@ -55,7 +55,7 @@ public class UserPengaturanActivity extends AppCompatActivity {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 switch (motionEvent.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        logout.setBackgroundColor(getResources().getColor(R.color.buttondown));
+                        logout.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                         break;
                     case MotionEvent.ACTION_UP:
                         logout.setBackgroundColor(0x00000000);
@@ -73,7 +73,7 @@ public class UserPengaturanActivity extends AppCompatActivity {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 switch (motionEvent.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        delacc.setBackgroundColor(getResources().getColor(R.color.buttondown));
+                        delacc.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                         break;
                     case MotionEvent.ACTION_UP:
                         delacc.setBackgroundColor(0x00000000);
