@@ -52,7 +52,7 @@
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/email_ijo" />
 
                     <TextView
                         android:id="@+id/penyedia_profile_email"
@@ -71,7 +71,7 @@
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/lokasi_merah" />
 
                     <TextView
                         android:id="@+id/penyedia_profile_alamat"
@@ -91,7 +91,7 @@
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/pengguna_jenis2" />
 
                     <TextView
                         android:id="@+id/penyedia_profile_ownername"
@@ -111,7 +111,7 @@
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/jam_ijo" />
 
                     <TextView
                         android:id="@+id/penyedia_profile_jam"
@@ -131,7 +131,7 @@
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/telepon_jenis2_ijo" />
 
                     <TextView
                         android:id="@+id/penyedia_profile_notelp"

@@ -31,7 +31,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginRight="8dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/lapangan" />
 
                     <TextView
                         android:textColor="@color/putih"
@@ -50,7 +50,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginRight="8dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/tanggal" />
 
                     <TextView
                         android:id="@+id/user_pesan_tanggal"
@@ -69,7 +69,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginRight="8dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/jam" />
 
                     <TextView
                         android:id="@+id/user_pesan_jam"
@@ -88,7 +88,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginRight="8dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/telepon" />
 
                     <TextView
                         android:id="@+id/user_pesan_notelp"
@@ -107,7 +107,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginRight="8dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/user" />
 
                     <TextView
                         android:id="@+id/user_pesan_namapenyedia"

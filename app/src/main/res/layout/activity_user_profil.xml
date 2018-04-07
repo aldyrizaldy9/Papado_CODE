@@ -60,7 +60,7 @@
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/email_ijo" />
 
                     <TextView
                         android:id="@+id/user_profile_email"
@@ -80,7 +80,7 @@
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/telepon_jenis2_ijo" />
 
                     <TextView
                         android:id="@+id/user_profile_notelp"
@@ -98,7 +98,7 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/ic_account_circle_black_48dp" />
+                        android:src="@mipmap/pengguna_jenis2" />
 
                     <TextView
                         android:id="@+id/user_profile_edit"

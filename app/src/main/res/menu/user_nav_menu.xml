@@ -5,11 +5,11 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/user_nav_profil"
-            android:icon="@drawable/ic_account_circle_black_48dp"
+            android:icon="@mipmap/pengguna_jenis2"
             android:title="Profil Saya" />
         <item
             android:id="@+id/user_nav_pemesanan"
-            android:icon="@drawable/ic_account_circle_black_48dp"
+            android:icon="@mipmap/pemesanan_oflineonline"
             android:title="Pemesanan" />
     </group>
     <group
@@ -17,11 +17,11 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/user_nav_badminton"
-            android:icon="@drawable/ic_account_circle_black_48dp"
+            android:icon="@mipmap/badminton"
             android:title="Badminton" />
         <item
             android:id="@+id/user_nav_futsal"
-            android:icon="@drawable/ic_account_circle_black_48dp"
+            android:icon="@mipmap/futsal"
             android:title="Futsal" />
     </group>
     <group
@@ -29,7 +29,7 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/user_nav_pengaturan"
-            android:icon="@drawable/ic_account_circle_black_48dp"
+            android:icon="@mipmap/setting"
             android:title="Pengaturan" />
     </group>
 </menu>

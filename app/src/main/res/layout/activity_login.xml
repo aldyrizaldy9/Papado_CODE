@@ -34,9 +34,10 @@
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/ic_account_circle_black_48dp" />
+                android:src="@mipmap/email" />
 
             <EditText
+                android:layout_marginLeft="8dp"
                 android:id="@+id/login_username_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -54,9 +55,10 @@
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/ic_account_circle_black_48dp" />
+                android:src="@mipmap/sandi" />
 
             <EditText
+                android:layout_marginLeft="8dp"
                 android:id="@+id/login_password_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

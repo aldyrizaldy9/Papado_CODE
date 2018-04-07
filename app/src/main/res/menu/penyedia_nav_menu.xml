@@ -5,15 +5,15 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/penyedia_nav_profil"
-            android:icon="@drawable/ic_account_circle_black_48dp"
+            android:icon="@mipmap/pengguna_jenis2"
             android:title="Profil Saya" />
         <item
             android:id="@+id/penyedia_nav_pemesanan"
-            android:icon="@drawable/ic_account_circle_black_48dp"
+            android:icon="@mipmap/pemesanan_oflineonline"
             android:title="Pemesanan" />
         <item
             android:id="@+id/penyedia_nav_jadwal"
-            android:icon="@drawable/ic_account_circle_black_48dp"
+            android:icon="@mipmap/tanggal"
             android:title="Jadwal" />
     </group>
     <group
@@ -22,7 +22,7 @@
 
         <item
             android:id="@+id/penyedia_nav_daftarlapangan"
-            android:icon="@drawable/ic_account_circle_black_48dp"
+            android:icon="@mipmap/jenis_lapangan"
             android:title="Daftar Lapangan" />
     </group>
     <group
@@ -31,7 +31,7 @@
 
         <item
             android:id="@+id/penyedia_nav_pengaturan"
-            android:icon="@drawable/ic_account_circle_black_48dp"
+            android:icon="@mipmap/setting"
             android:title="Pengaturan" />
     </group>
 </menu>
